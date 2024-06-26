@@ -1,4 +1,3 @@
-//your JS code here. If required.
 let arr = [1, 2, 3, 4]
 let filtererArr  = new Promise((resolve,reject)=>{
 	let finalArr = []
@@ -18,10 +17,8 @@ filtererArr.then((value)=>{
 		document.getElementById("output").innerText = value.join(", ")
 	},1000)
 	
-	return new Promise((resolve,reject)=>{
-		let MultiArr = value.map((ele)=>ele*2)
-		resolve(MultiArr);
-	})
+	let MultiArr = value.map((ele)=>ele*2)
+	return MultiArr;
 }).then((res)=>{
 	setTimeout(()=>{
 		document.getElementById("output").innerText = res.join(", ")
