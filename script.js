@@ -2,7 +2,7 @@ let arr = [1, 2, 3, 4]
 let filtererArr  = new Promise((resolve,reject)=>{
 	let finalArr = []
 	setTimeout(()=>{
-		arr.filter((item)=>{
+	 arr.filter((item)=>{
 			if(item%2 == 0){
 				finalArr.push(item)
 			}
